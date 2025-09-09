@@ -1,1 +1,1 @@
-WIP. A simple click and drag game for now :)
+WIP. A simple click game for now :)
