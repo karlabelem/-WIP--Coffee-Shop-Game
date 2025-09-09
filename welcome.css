@@ -1,0 +1,43 @@
+* Style the welcome screen container */
+#welcome-screen {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: #ffeedd; /* Match the background color */
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 20px;
+border-radius: 10px; /* Match the rounded corners */
+}
+
+
+#welcome-screen h1 {
+font-size: 2.5rem;
+color: #5c4033; 
+margin-bottom: 1rem;
+}
+
+
+#welcome-screen p {
+font-size: 1.2rem;
+color: #d4a373; 
+margin-bottom: 2rem;
+}
+
+#welcome-screen button {
+background-color: #d4a373;
+color: white;
+border: none;
+border-radius: 10px;
+padding: 10px 20px;
+font-size: 1rem;
+cursor: pointer;
+margin: 0.5rem;
+transition: background-color 0.3s ease;
+}
+
+#welcome-screen button:hover {
+background-color: #b5835a; 
+}

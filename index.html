@@ -3,47 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee Shop Simulator</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Coffee Shop Simulator ☕</title>
 </head>
-
 <body>
-  <h1>Coffee Shop Simulator ☕</h1>
-
-  <div id="game-info">
-    <div id="order">Order: Make a Latte (Espresso + Milk + Foam)</div>
-    <div id="timer">Time Left: 60s</div>
-    <div id="score">Score: 0</div>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen">
+    <h1>Welcome to Coffee Shop Simulator ☕</h1>
+    <button id="timed-mode">Timed Play ⏱️</button>
+    <button id="free-mode">Free Play 🎨</button>
   </div>
 
-  <!-- ✅ Added result box -->
-  <div id="result"></div>
+  <!-- Game Screen -->
+  <div id="game-container" style="display:none;">
+    <h1>Coffee Shop Simulator ☕</h1>
+    <div id="game-info">
+      <div id="order">Order will appear here</div>
+      <div id="timer">Timer: --</div>
+      <div id="score">Score: 0</div>
+    </div>
 
-  <div class="game">
-    <div class="tray">
-      <div class="ingredient" draggable="true" id="espresso">
-        <img src="assets/espresso.png" alt="Espresso">
+    <div class="game">
+      <div class="tray">
+        <div class="ingredient" draggable="true" id="espresso">
+          <img src="assets/espresso.png" alt="Espresso">
+        </div>
+        <div class="ingredient" draggable="true" id="milk">
+          <img src="assets/milk-bottle.png" alt="Milk">
+        </div>
+        <div class="ingredient" draggable="true" id="foam">
+          <img src="assets/frother.png" alt="Foam">
+        </div>
+        <div class="ingredient" draggable="true" id="chocolate">
+          <img src="assets/inclined-chocolate-bar.png" alt="Chocolate">
+        </div>
       </div>
-      <div class="ingredient" draggable="true" id="milk">
-        <img src="assets/milk-bottle.png" alt="Milk">
-      </div>
-      <div class="ingredient" draggable="true" id="foam">
-        <img src="assets/frother.png" alt="Foam">
-      </div>
-      <div class="ingredient" draggable="true" id="chocolate">
-        <img src="assets/inclined-chocolate-bar.png" alt="Chocolate">
+      <div class="cup" id="cup">
+        <img src="assets/coffee-cup.png" alt="Cup Base" class="cup-base">
       </div>
     </div>
 
-    <div class="cup" id="cup">
-      <img src="assets/coffee-cup.png" alt="Cup Base" class="cup-base">
-    </div>
-  </div>
-  
-  <button id="start-game">Start Game</button>
-  <button id="submit-order" disabled>Submit Order</button>
+    <button id="start-game">Start Game</button>
+    <button id="submit-order" disabled>Submit Order</button>
 
-  <!-- ✅ Script (compiled JS, not TS directly) -->
-  <script src="main.js" type="module"></script>
+    <div id="result"></div>
+  </div>
+
+  <!-- Only load welcome.ts here -->
+  <script type="module" src="welcome.ts"></script>
 </body>
 </html>

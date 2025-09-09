@@ -1,119 +1,73 @@
 body {
-    font-family: 'Comic Sans MS', cursive;
-    background: #fdf6f0;
-    text-align: center;
-    color: #5c4033;
-  }
-  
-  h1 {
-    margin-top: 20px;
-  }
-  
-  .game {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 40px;
-  }
-  
-  .tray, .cup {
-    border: 3px dashed #d4a373;
-    border-radius: 15px;
-    padding: 20px;
-    width: 180px;
-    min-height: 220px;
-    background: #fffaf5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .ingredient img {
-    width: 60px;
-    cursor: grab;
-  }
-  
-  .cup {
-    position: relative;
-  }
-  
-  .cup-base {
-    width: 100px;
-    margin-top: 40px;
-  }
-  
-  #order {
-    margin-top: 20px;
-    font-size: 18px;
-    background: #ffeedd;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-  }
-  
-  #score {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  
-  button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background: #d4a373;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #b5835a;
-  }
+  font-family: 'Comic Sans MS', cursive;
+  background: #fdf6f0;
+  text-align: center;
+  color: #5c4033;
+}
 
+h1 {
+  margin-top: 20px;
+}
 
-/* Style the welcome screen container */
-#welcome-screen {
+.game {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.tray, .cup {
+  border: 3px dashed #d4a373;
+  border-radius: 15px;
+  padding: 20px;
+  width: 180px;
+  min-height: 220px;
+  background: #fffaf5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #ffeedd; /* Match the background color */
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px; /* Match the rounded corners */
+  justify-content: flex-start;
 }
 
-/* Style the heading */
-#welcome-screen h1 {
-  font-size: 2.5rem;
-  color: #b5835a; /* Match the hover button color */
-  margin-bottom: 1rem;
+.ingredient img {
+  width: 60px;
+  cursor: grab;
 }
 
-/* Style the paragraph */
-#welcome-screen p {
-  font-size: 1.2rem;
-  color: #d4a373; /* Match the button background color */
-  margin-bottom: 2rem;
+.cup {
+  position: relative;
 }
 
-/* Style the buttons */
-#welcome-screen button {
-  background-color: #d4a373; /* Match the button background color */
-  color: white;
-  border: none;
-  border-radius: 10px; /* Match the button border radius */
+.cup-base {
+  width: 100px;
+  margin-top: 40px;
+}
+
+#order {
+  margin-top: 20px;
+  font-size: 18px;
+  background: #ffeedd;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 15px;
   padding: 10px 20px;
-  font-size: 1rem;
+  border: none;
+  background: #d4a373;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
   cursor: pointer;
-  margin: 0.5rem;
-  transition: background-color 0.3s ease;
 }
 
-#welcome-screen button:hover {
-  background-color: #b5835a; /* Match the button hover color */
+button:hover {
+  background: #b5835a;
 }
